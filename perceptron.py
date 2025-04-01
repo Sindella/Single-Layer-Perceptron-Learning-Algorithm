@@ -25,10 +25,10 @@ wei_arr=np.array(weights)
 data = [[float(item) for item in sublist] for sublist in data]
 
 for k in range(0,int(model[0][1])):  #perceptron training algorithm
+    print("Iteration " + str(k+1))
+    print(wei_arr)
     for i in range(0,len(data)):
         data_arr=np.array(data[i][1:-1])
-        print("Iteration " + str(k+1))
-        print(wei_arr)
         wei_arr_next=float(model[0][0])*(data[i][-1]-(wei_arr @ data_arr))*data_arr
         if np.linalg.norm(wei_arr_next-wei_arr)<float(model[0][2]):
             continue
@@ -44,3 +44,11 @@ with open("trained_model.txt", "w") as data:  #save the trained model's weights
                 data.write("\nweight" + str(j) + ": " + str(i))
 
 test_model.test(weights) #testing the trained model
+print("weights: ", wei_arr)
+
+inputs= []
+inputs.append(float(input("\nWeight of your watermelon(kg): ")))
+inputs.append((float(input("\nJuiciness level of watermelons(0-10): ")))/10)
+inputs.append((float(input("\nExternal damage level of watermelons(0-10): "))/10))
+inputs = np.array(inputs)
+print("\nYour watermelon's price is $", round(inputs @ wei_arr, 2), " \n")
