@@ -47,6 +47,11 @@ pip install numpy scikit-learn
 ```
 
 ### 2️⃣ Generate Data or use Custom Data
+Run `perceptron.py`
+```bash
+python perceptron.py
+```
+
 Type 1 to the question to create synthetic training and testing datasets:
 ```bash
 Do you want to use your own data or generate new one for training data?
@@ -67,14 +72,8 @@ Type 1 - Tune
 Type 2 - Use default settings
 ```
 
-### 4️⃣ Train the Perceptron Model
-Run `perceptron.py` to train the model using the data:
-```bash
-python perceptron.py
-```
-The trained model is saved in `trained_model.txt`.
+### 4️⃣ Test the Model
 
-### 5️⃣ Test the Model
 Model will be tested automatically to evaluate model performance:
 
 This will compute the **Mean Absolute Error (MAE)** for predictions.
