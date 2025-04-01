@@ -13,14 +13,15 @@ The **Perceptron** is a type of artificial neural network that is used for binar
    - Apply an activation function (usually a step function).
    - Update weights using the learning rule:
      
-     \[ w_{new} = w_{old} + \eta (y_{true} - y_{pred}) x \]
+     ![image](https://github.com/user-attachments/assets/09ea43b5-6f0a-45bf-beb2-e07da35c8922)
+
      
      where:
-     - \(w\) is the weight vector,
-     - \(\eta\) is the learning rate,
-     - \(y_{true}\) is the actual label,
-     - \(y_{pred}\) is the predicted output,
-     - \(x\) is the input vector.
+     - w is the weight vector,
+     - r is the learning rate,
+     - y is the actual label,
+     - f_w_t (x) is the predicted output,
+     - x is the input vector.
 3. Repeat until convergence or for a fixed number of iterations.
 
 ---
