@@ -82,6 +82,11 @@ This will compute the **Mean Absolute Error (MAE)** for predictions.
 
 ![image](https://github.com/user-attachments/assets/83619ca6-bd21-4c79-971a-a848e6744bc0)
 (default settings)
+
+And finally: 
+![image](https://github.com/user-attachments/assets/0bb3da53-af24-4b1d-b3eb-487cd7c4446f)
+
+
 ---
 
 ## 📊 Model Evaluation
@@ -92,8 +97,6 @@ mae = mean_absolute_error(y_true, y_pred)
 ```
 - **Lower MAE** indicates better predictions.
 - If MAE is **close to zero**, the model is highly accurate.
-
-![image](https://github.com/user-attachments/assets/b6400779-7430-4998-8724-ba27bcb8eaf0)
 
 ---
 
