@@ -81,9 +81,11 @@ Model will be tested automatically to evaluate model performance:
 This will compute the **Mean Absolute Error (MAE)** for predictions.
 
 ![image](https://github.com/user-attachments/assets/83619ca6-bd21-4c79-971a-a848e6744bc0)
+
 (default settings)
 
 And finally: 
+
 ![image](https://github.com/user-attachments/assets/0bb3da53-af24-4b1d-b3eb-487cd7c4446f)
 
 
