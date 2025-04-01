@@ -3,6 +3,8 @@ The basic perceptron learning algorithm that explains how artificial neurons wor
 
 This repository implements a Perceptron Learning Algorithm to classify and predict data. It includes generating training and testing data, training a Perceptron model, tuning hyperparameters, and evaluating model performance using Mean Absolute Error (MAE).
 
+The model is specifically designed to predict watermelon prices based on various attributes such as weight, juiciness, and external damage. The synthetic data generated simulates different watermelon characteristics, and the trained model uses these attributes to estimate the price. At the end of the process, the trained model allows users to input their own watermelon characteristics and receive a predicted price.
+
 ## 📌 Perceptron Learning Algorithm Overview
 
 The **Perceptron** is a type of artificial neural network that is used for binary classification problems. It operates using a simple learning rule:
@@ -78,6 +80,8 @@ Model will be tested automatically to evaluate model performance:
 
 This will compute the **Mean Absolute Error (MAE)** for predictions.
 
+![image](https://github.com/user-attachments/assets/83619ca6-bd21-4c79-971a-a848e6744bc0)
+(default settings)
 ---
 
 ## 📊 Model Evaluation
@@ -88,6 +92,8 @@ mae = mean_absolute_error(y_true, y_pred)
 ```
 - **Lower MAE** indicates better predictions.
 - If MAE is **close to zero**, the model is highly accurate.
+
+![image](https://github.com/user-attachments/assets/b6400779-7430-4998-8724-ba27bcb8eaf0)
 
 ---
 
